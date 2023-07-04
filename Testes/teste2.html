@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>centralizando um texto...</title>
+        <style>
+            body {margin: 0;}
+
+            /* seto o container como relative para a div absoluta se posicionar em relacao a ele */
+            #container {width: 600px; height: 700px; border: 1px solid red; margin: 0 auto; position: relative;}
+            /* PS: eu centralizo ele usando o margin */
+
+            /* Aqui a magia acontece, eu seto como abosluto e configuro uma posicao top de 45% do tamanho total dele (600px x 600px) e com uma width de 100% ocupando toda a tela, o text align center confirmar que o texto sempre estara centralizado dentro desses 100% de espaco */
+            .conteudo {text-align: center;position: absolute; top: 45%; left: 0; width: 100%;}
+
+            /* classe do botao (input) */
+            .conteudo1 {width: 100%; position: absolute; top: 50%; left: 0; text-align: center;}
+            
+            /* estilizacoes */
+            span {padding: 10px 5px; letter-spacing: 5px; background-color: #d1d1d1; }
+
+
+            /* Formatando de forma global todos os backgrounds, centralizando, setando sem repeticao, cobrindo a tela toda e fixando ele */
+            .caixa1, .caixa2, .caixa3 {background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; height: 100%;}
+
+            /* Upando os backgrounds */
+            .caixa1 {background-image: url(https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg);}
+
+            .caixa2 {background-image: url(https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png);}
+
+            .caixa3 {background-image: url(https://www.petz.com.br/blog/wp-content/uploads/2019/05/cachorro-independente-1-1280x720.jpg);}
+
+
+            /* Formatacoes de texto */
+            h1 {text-align: center; margin: 0;}
+
+            p {padding: 15px 5px; text-align: justify;margin: 0;}
+
+            .texto { background-color: #ccc;}
+        </style>
+    </head>
+    <body>
+        <div class="caixa1">
+            <div id="container">
+            <div class="conteudo"><span>Lorem ipsum.</span></div>
+            <div class="conteudo1" > <input type="submit" value="Teste"></div> 
+            </div>
+        </div>
+
+        <div class="texto"><h1>Paralaxx</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto officia, fuga facere hic harum assumenda rerum ipsa provident debitis minus blanditiis possimus sint magnam similique quisquam neque doloribus in ullam!</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto officia, fuga facere hic harum assumenda rerum ipsa provident debitis minus blanditiis possimus sint magnam similique quisquam neque doloribus in ullam!</p>
+
+        </div>
+
+        <div class="caixa2">
+            <div id="container">
+                <div class="conteudo"><span>Lorem ipsum.</span></div>
+            </div>
+        </div>
+
+        <div class="texto"><h1>Paralaxx</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto officia, fuga facere hic harum assumenda rerum ipsa provident debitis minus blanditiis possimus sint magnam similique quisquam neque doloribus in ullam!</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto officia, fuga facere hic harum assumenda rerum ipsa provident debitis minus blanditiis possimus sint magnam similique quisquam neque doloribus in ullam!</p>
+
+        </div>
+
+        <div class="caixa3">
+            <div id="container">
+                <div class="conteudo"><span>Lorem ipsum.</span></div>
+            </div>
+        </div>
+    </body>
+</html>
