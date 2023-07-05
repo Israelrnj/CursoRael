@@ -1,0 +1,12 @@
+anotações
+estudar ate o topico 9
+pular para o 13 e 14
+
+                  -inicio- sentença de codigo
+programa de computador é organizado por pastas e arquivos
+1- sentença (codigo)
+2- blocos (frases, paragrafos);
+linguagem imperativa (codigo executa algo)
+
+    sentença 2
+ordem importa, leitura de cima para baixo (livro)
